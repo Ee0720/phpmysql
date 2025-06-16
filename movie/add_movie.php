@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute([$title, $year, $director, $mtype, $mdate, $content]);
 
         // 新增成功後導向電影列表頁面
-        header("Location: display_movies.php"); // 假設電影列表頁為 display_movies.php
+        header("Location: manage_movies.php"); // 假設電影列表頁為 display_movies.php
         exit();
     } catch (PDOException $e) {
         // 如果新增失敗，顯示錯誤訊息
@@ -153,7 +153,7 @@ $conn = null;
             
             <button type="submit" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition ease-in-out duration-150">新增電影</button>
         </form>
-        <a class="back-link" href="display_movies.php">返回電影列表</a>
+        <a class="back-link" href="manage_movies.php">返回電影列表</a>
     </div>
 </body>
 </html>

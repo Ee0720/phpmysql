@@ -126,7 +126,7 @@ try {
         <?php else: ?>
             <p class="text-center text-red-500 text-lg font-semibold">找不到該電影。</p>
         <?php endif; ?>
-        <a class="back-link" href="display_movies.php">返回電影列表</a>
+        <a class="back-link" href="manage_movies.php">返回電影列表</a>
     </div>
 </body>
 </html>
